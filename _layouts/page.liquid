@@ -2,6 +2,49 @@
 layout: default
 ---
 
+<style>
+  .post-header {
+    margin-bottom: 2rem;
+  }
+  .post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #dc3545;
+    margin-bottom: 0.5rem;
+  }
+  .post-description {
+    font-size: 1.15rem;
+    color: #6c757d;
+    font-style: italic;
+  }
+  .content-section h2 {
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .content-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .content-section ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  .content-section ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #dc3545;
+    font-weight: bold;
+  }
+  .content-section strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+</style>
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>

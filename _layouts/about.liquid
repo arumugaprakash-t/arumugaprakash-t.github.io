@@ -2,21 +2,71 @@
 layout: default
 ---
 
-<div class="about">
-  {% if page.profile %}
-  <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-    {% if page.profile.image %}
-      <img class="img-fluid z-depth-1 rounded{% if page.profile.image_circular %}-circle{% endif %}" src="{{ page.profile.image | relative_url }}" alt="profile picture">
-    {% endif %}
-    {% if page.profile.more_info %}
-      <div class="more-info">
-        {{ page.profile.more_info }}
-      </div>
-    {% endif %}
-  </div>
-  {% endif %}
+<style>
+  .hero-section {
+    margin-bottom: 2.5rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #dc3545;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 3rem;
+  }
+  .intro-text strong {
+    color: #dc3545;
+    font-weight: 600;
+  }
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+  }
+  .social-links a {
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .social-links a:hover {
+    color: #c82333;
+    text-decoration: underline;
+  }
+</style>
 
-  <div class="clearfix">
+<div class="about">
+  <div class="hero-section">
+    <h1 class="hero-title">{{ site.first_name }} {{ site.last_name }}</h1>
+    <p class="hero-subtitle">{{ page.subtitle }}</p>
+  </div>
+
+  <div class="content">
     {{ content }}
+  </div>
+
+  <div class="social-links">
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
+    {% endif %}
+    {% if site.email %}
+    <a href="mailto:{{ site.email }}">Email</a>
+    {% endif %}
   </div>
 </div>

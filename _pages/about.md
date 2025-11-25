@@ -2,19 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: Developer | Golang | Java | Databases
+subtitle: Senior Software Engineer
 
-profile:
-  align: right
-  image:
-  image_circular: false
-  more_info:
-
-news: false
-selected_papers: false
 social: false
 ---
 
-# Hello World!
+<div class="intro-text" markdown="1">
 
-Welcome to my personal site. More content coming soon!
+I'm a Senior Software Engineer at SIMPL with 4+ years building scalable payment systems and distributed microservices. I work with **Golang**, **Java**, **Spring Boot**, and **Kafka** to architect high-performance backend systems.
+
+I'm passionate about distributed systems, database internals, and backend architecture. Currently focused on payment gateway orchestration, event-driven architectures, and observability at scale.
+
+</div>
