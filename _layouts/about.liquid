@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="about">
+  {% if page.profile %}
+  <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+    {% if page.profile.image %}
+      <img class="img-fluid z-depth-1 rounded{% if page.profile.image_circular %}-circle{% endif %}" src="{{ page.profile.image | relative_url }}" alt="profile picture">
+    {% endif %}
+    {% if page.profile.more_info %}
+      <div class="more-info">
+        {{ page.profile.more_info }}
+      </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="clearfix">
+    {{ content }}
+  </div>
+</div>

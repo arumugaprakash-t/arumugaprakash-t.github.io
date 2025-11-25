@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.bundle
+Gemfile.lock
+assets/libs/
+node_modules/
+.DS_Store
+.idea
+.venv
+.ruby-version
+.tweet-cache
