@@ -50,23 +50,11 @@ layout: default
 
 <div class="about">
   <div class="hero-section">
-    <h1 class="hero-title">{{ site.first_name }} {{ site.last_name }}</h1>
+    <h1 class="hero-title">Hey I'm Prakash</h1>
     <p class="hero-subtitle">{{ page.subtitle }}</p>
   </div>
 
   <div class="content">
     {{ content }}
-  </div>
-
-  <div class="social-links">
-    {% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
-    {% endif %}
-    {% if site.linkedin_username %}
-    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
-    {% endif %}
-    {% if site.email %}
-    <a href="mailto:{{ site.email }}">Email</a>
-    {% endif %}
   </div>
 </div>
