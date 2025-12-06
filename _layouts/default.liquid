@@ -99,11 +99,31 @@
         font-size: 0.875rem;
         color: var(--text-muted);
       }
-      footer a {
+      .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+      .footer-social a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      .footer-social a:hover {
+        color: var(--primary-hover);
+        text-decoration: underline;
+      }
+      footer .footer-text {
+        color: var(--text-muted);
+        margin-top: 1rem;
+      }
+      footer .footer-text a {
         color: var(--primary-color);
         text-decoration: none;
       }
-      footer a:hover {
+      footer .footer-text a:hover {
         text-decoration: underline;
       }
 
@@ -139,7 +159,20 @@
       </main>
 
       <footer>
-        {{ site.footer_text }}
+        <div class="footer-social">
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
+          {% endif %}
+          {% if site.email %}
+          <a href="mailto:{{ site.email }}">Email</a>
+          {% endif %}
+        </div>
+        <div class="footer-text">
+          {{ site.footer_text }}
+        </div>
       </footer>
     </div>
 
