@@ -12,40 +12,44 @@ description: Technical writings and projects
     margin: 2rem 0;
   }
   .post-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
   }
   .post-item:last-child {
     border-bottom: none;
   }
   .post-link {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2c3e50;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-black);
     text-decoration: none;
     transition: color 0.2s;
+    letter-spacing: -0.01em;
   }
   .post-link:hover {
-    color: #dc3545;
+    color: var(--color-gray);
   }
   .post-meta {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-light-gray);
+    margin-bottom: 0.75rem;
   }
   .post-excerpt {
-    color: #444;
+    color: var(--color-charcoal);
     line-height: 1.6;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 1.0625rem;
   }
   .read-more {
-    color: #dc3545;
+    color: var(--color-black);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
   }
   .read-more:hover {
+    color: var(--color-gray);
     text-decoration: underline;
   }
 </style>

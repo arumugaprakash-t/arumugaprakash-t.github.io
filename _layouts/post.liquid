@@ -4,74 +4,81 @@ layout: default
 
 <style>
   .post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
   }
   .post-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 0.75rem;
-    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
   }
   .post-meta {
-    font-size: 0.95rem;
-    color: #6c757d;
-    margin-bottom: 0.5rem;
-  }
-  .post-description {
-    font-size: 1.15rem;
-    color: #444;
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
-  .post-content {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #333;
-  }
-  .post-content h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #dc3545;
-    margin-top: 2.5rem;
+    font-size: 0.875rem;
+    color: var(--color-light-gray);
     margin-bottom: 1rem;
   }
+  .post-description {
+    font-size: 1.0625rem;
+    color: var(--color-gray);
+    font-style: italic;
+    margin-top: 0.75rem;
+    line-height: 1.6;
+  }
+  .post-content {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-charcoal);
+    max-width: 650px;
+  }
+  .post-content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
   .post-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #2c3e50;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-dark);
     margin-top: 2rem;
     margin-bottom: 0.75rem;
   }
   .post-content p {
     margin-bottom: 1.5rem;
   }
-  .post-content strong {
-    color: #2c3e50;
-    font-weight: 600;
+  .post-content strong,
+  .post-content b {
+    color: var(--color-black);
+    font-weight: 500;
   }
   .post-content code {
-    background: #f5f5f5;
-    padding: 0.2rem 0.4rem;
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    padding: 0.2em 0.4em;
     border-radius: 3px;
-    font-family: 'Courier New', monospace;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.9em;
-    color: #dc3545;
+    color: var(--color-dark);
   }
   .post-content pre {
-    background: #f8f8f8;
-    border: 1px solid #e5e5e5;
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
     border-radius: 6px;
-    padding: 1rem;
+    padding: 1.25rem;
     overflow-x: auto;
     margin-bottom: 1.5rem;
   }
   .post-content pre code {
     background: none;
     padding: 0;
-    color: #333;
+    border: none;
+    color: var(--color-charcoal);
   }
   .post-content ul, .post-content ol {
     margin-bottom: 1.5rem;
@@ -81,30 +88,35 @@ layout: default
     margin-bottom: 0.5rem;
   }
   .post-content blockquote {
-    border-left: 4px solid #dc3545;
-    padding-left: 1rem;
+    border-left: 3px solid var(--color-black);
+    padding-left: 1.25rem;
     margin: 1.5rem 0;
-    color: #555;
+    color: var(--color-gray);
     font-style: italic;
   }
   .post-content a {
-    color: #dc3545;
-    text-decoration: none;
+    color: var(--color-black);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
   }
   .post-content a:hover {
-    text-decoration: underline;
+    text-decoration-color: var(--color-black);
   }
   .post-footer {
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--color-border);
   }
   .back-link {
-    color: #dc3545;
+    color: var(--color-black);
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.2s;
   }
   .back-link:hover {
+    color: var(--color-gray);
     text-decoration: underline;
   }
 </style>
